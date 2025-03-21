@@ -229,11 +229,501 @@ string? nev = null;
 Console.WriteLine(nev ?? "Nincs név megadva"); // "Nincs név megadva"
 ```
 
+# **Összetett adatszerkezetek**
+Nagyon jó irány! A C# összetett adatszerkezetei lehetővé teszik, hogy **több értéket** tároljunk, **strukturáltan** dolgozzunk adatokkal, és **rugalmasan** szervezzük a programunk logikáját.
+
+Nézzük sorban a leggyakoribb összetett adatszerkezeteket, alap példákkal:
+
+---
+
+## ✅ 1. **Tömbök (Arrays)**
+
+Statikus méretű, azonos típusú elemeket tartalmaz.
+
+```csharp
+int[] szamok = new int[3];
+szamok[0] = 10;
+szamok[1] = 20;
+szamok[2] = 30;
+
+Console.WriteLine(szamok[1]); // 20
+```
+
+- Mérete fix.
+- Az indexelés 0-tól kezdődik.
+- Használható `foreach` vagy `for` ciklussal.
+
+---
+
+## ✅ 2. **Listák (List\<T\>)**
+
+Dinamikus, típusos lista. Sokkal rugalmasabb, mint a tömb.
+
+```csharp
+List<string> nevek = new List<string>();
+nevek.Add("Anna");
+nevek.Add("Béla");
+
+Console.WriteLine(nevek[0]); // Anna
+```
+
+Jellemzők:
+- Elemet hozzáadhatsz `Add`, törölhetsz `Remove`, kereshetsz `Contains` stb.
+- Mérete automatikusan nő.
+
+---
+
+## ✅ 3. **Szótár (Dictionary\<K, V\>)**
+
+Kulcs-érték párokat tárol.
+
+```csharp
+Dictionary<string, int> korok = new Dictionary<string, int>();
+korok["Anna"] = 23;
+korok["Béla"] = 30;
+
+Console.WriteLine(korok["Anna"]); // 23
+```
+
+- Kulcs (`K`) egyedi, az érték (`V`) lehet bármi.
+- Gyors keresés kulcs alapján.
+- Hasznos például adatlekérdezéshez, azonosítókhoz, statisztikákhoz.
+
+---
+
+## ✅ 4. **Halmaz (HashSet\<T\>)**
+
+Egyedi értékeket tároló gyűjtemény.
+
+```csharp
+HashSet<int> szamok = new HashSet<int>();
+szamok.Add(1);
+szamok.Add(2);
+szamok.Add(2); // nem kerül be újra
+
+Console.WriteLine(szamok.Count); // 2
+```
+
+- Nem enged duplikált elemeket.
+- Gyors ellenőrzés, hogy egy elem benne van-e (`Contains`).
+
+---
+
+## ✅ 5. **Saját osztály (class)**
+
+Komplex adatmodellekhez, viselkedéssel (metódusok) együtt.
+
+```csharp
+class Ember
+{
+    public string Nev;
+    public int Kor;
+
+    public void Koszon()
+    {
+        Console.WriteLine($"Szia, {Nev} vagyok!");
+    }
+}
+
+Ember e = new Ember();
+e.Nev = "Ádám";
+e.Kor = 25;
+e.Koszon(); // Szia, Ádám vagyok!
+```
+
+- Referenciatípus (memóriában hivatkozással kezelődik).
+- Használható OOP (objektumorientált programozás) alapjaként.
+
+---
+
+## ✅ 6. **Struktúra (struct)**
+
+Hasonló az osztályhoz, de **értéktípus**. Inkább kisebb, egyszerűbb objektumokra.
+
+```csharp
+struct Pont
+{
+    public int X;
+    public int Y;
+}
+
+Pont p = new Pont();
+p.X = 3;
+p.Y = 4;
+
+Console.WriteLine($"{p.X}, {p.Y}");
+```
+
+- Jobban teljesít, ha sok kis adatot mozgatunk.
+- Nincs öröklés, csak egyszerűbb használatra.
+
+---
+
+## Összehasonlító táblázat (röviden)
+
+| Típus               | Dinamikus? | Egyedi elemek? | Kulcs-érték? | OOP? |
+|---------------------|------------|----------------|--------------|------|
+| Array               | ❌         | ❌             | ❌           | ❌   |
+| List\<T\>           | ✅         | ❌             | ❌           | ❌   |
+| Dictionary\<K,V\>   | ✅         | ✅ (kulcs)     | ✅           | ❌   |
+| HashSet\<T\>        | ✅         | ✅             | ❌           | ❌   |
+| class               | ✅         | -              | -            | ✅   |
+| struct              | ✅         | -              | -            | ✅   |
+
+Nagyon jó kérdés! Az `enum` (felsorolási típus) **nem tipikus értelemben vett összetett adatszerkezet**, mint a tömb vagy lista, de **összetett adattípusnak** számít, mivel több lehetséges **névhez rendelt értéket** tartalmaz egy típus alatt.
+
+# `enum`?
+
+Az `enum` (enumeration) egy olyan típus, amely egy előre definiált, **nevesített értékkészletet** tartalmaz. Alapértelmezés szerint ezek mögött egész számok állnak.
+
+Példa:
+
+```csharp
+enum Hetnapja
+{
+    Hetfo,
+    Kedd,
+    Szerda,
+    Csutortok,
+    Pentek,
+    Szombat,
+    Vasarnap
+}
+```
+
+Használat:
+
+```csharp
+Hetnapja nap = Hetnapja.Szerda;
+
+if (nap == Hetnapja.Szerda)
+{
+    Console.WriteLine("Ma szerda van.");
+}
+```
+
+Mögöttes értékek:
+
+Alapértelmezés szerint az első érték `0`, és minden következő egyel nő:
+
+```csharp
+Console.WriteLine((int)Hetnapja.Hetfo);    // 0
+Console.WriteLine((int)Hetnapja.Szerda);   // 2
+```
+
+De manuálisan is megadható:
+
+```csharp
+enum Statusz
+{
+    Folyamatban = 1,
+    Kesz = 2,
+    Hibas = 99
+}
+```
 
 
-1. **Összetett adatszerkezetek** -- Például tömbök, listák (List\<T\>), szótárak (Dictionary\<K,V\>), halmazok (HashSet\<T\>), valamint saját osztályok és struktúrák.
-2. **Vezérlési szerkezetek** -- Feltételes elágazások (if, switch), ciklusok (for, while, foreach), kivételkezelés (try-catch).
-3. **Metódusok és függvények** -- Hogyan szervezd a kódot újrafelhasználható egységekké, paraméterátadás, visszatérési értékek.
+
+# **Vezérlési szerkezetek**
+A vezérlési szerkezetek határozzák meg, milyen sorrendben, milyen feltételek mellett, hányszor és hogyan hajtódjanak végre az utasítások.
+
+## **Feltételes elágazás – `if`, `else if`, `else`**
+
+```csharp
+int szam = 10;
+
+if (szam > 0)
+{
+    Console.WriteLine("Pozitív szám");
+}
+else if (szam < 0)
+{
+    Console.WriteLine("Negatív szám");
+}
+else
+{
+    Console.WriteLine("A szám nulla");
+}
+```
+> [!NOTE]  
+> A `feltétel` zárójelben van.
+
+> [!NOTE]  
+> A blokk `{}` között van.
+
+> [!NOTE]  
+> Ha csak egy sor van, elhagyható a `{}`, de **ajánlott** mindig használni.
+
+## **Többágú elágazás – `switch`**
+
+A `switch` akkor hasznos, ha egy változót több lehetséges értékkel kell összehasonlítani.
+
+```csharp
+int nap = 3;
+
+switch (nap)
+{
+    case 1:
+        Console.WriteLine("Hétfő");
+        break;
+    case 2:
+        Console.WriteLine("Kedd");
+        break;
+    case 3:
+        Console.WriteLine("Szerda");
+        break;
+    default:
+        Console.WriteLine("Ismeretlen nap");
+        break;
+}
+```
+
+> [!NOTE]  
+> A `break` utasítás megszakítja a `switch`-et.
+
+> [!NOTE]  
+> A `default` akkor fut, ha egyik `case` sem egyezik.
+
+## **Ciklusok – `for`, `while`, `do-while`, `foreach`**
+
+### 🔹 `for` ciklus
+
+Ismert ismétlésszámnál.
+
+```csharp
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine("i értéke: " + i);
+}
+```
+### `while` ciklus
+
+Amíg a feltétel igaz, ismétel.
+
+```csharp
+int szam = 0;
+
+while (szam < 3)
+{
+    Console.WriteLine(szam);
+    szam++;
+}
+```
+
+### `do-while` ciklus
+Legalább egyszer lefut, utána ellenőrzi a feltételt.
+
+```csharp
+int szam = 0;
+
+do
+{
+    Console.WriteLine(szam);
+    szam++;
+}
+while (szam < 3);
+```
+
+### `foreach` ciklus
+Gyűjtemények bejárására – egyszerű és tiszta.
+
+```csharp
+string[] nevek = { "Anna", "Béla", "Cili" };
+
+foreach (string nev in nevek)
+{
+    Console.WriteLine(nev);
+}
+```
+
+## **Kivételkezelés – `try`, `catch`, `finally`**
+A programhibák (*például null érték, osztás 0-val, fájlhiba*) elkapására szolgál.
+
+```csharp
+try
+{
+    int x = 10;
+    int y = 0;
+    int eredmeny = x / y;
+}
+catch (DivideByZeroException ex)
+{
+    Console.WriteLine("Hiba: Osztás nullával.");
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Általános hiba történt: " + ex.Message);
+}
+finally
+{
+    Console.WriteLine("Ez mindig lefut.");
+}
+```
+
+> [!NOTE]  
+> Csak a `try` blokkban lehet a hibás kód.
+
+> [!NOTE]  
+> A `catch` hiba esetén hajtódik végre.
+
+> [!NOTE]  
+> A `finally` **mindig lefut** – akár volt hiba, akár nem.
+
+## Hasznos utasítások ciklusban
+
+| Utasítás | Jelentés |
+|----------|----------|
+| `break`  | Kilép a ciklusból |
+| `continue` | Átugorja a ciklus hátralévő részét, új iteráció indul |
+| `return` | Kilép a metódusból |
+
+
+
+Nagyszerű, a **metódusok és függvények** a C# szíve-lelke – segítségükkel darabolhatod a programodat logikus részekre, újrahasználható kódblokkokat hozhatsz létre, és olvashatóbbá teheted az alkalmazásodat.
+
+---
+
+# Metódus
+A C#-ban a **függvények** hivatalosan **metódusok** (*methods*), és mindig egy osztályhoz vagy struktúrához tartoznak.
+
+```csharp
+visszatérési_típus MetódusNeve(típus paraméter1, típus paraméter2, ...)
+{
+    // utasítások
+    return érték; // ha a visszatérési típus nem void
+}
+```
+Egyszerű példa: Név kiírása
+
+```csharp
+void Koszontes(string nev)
+{
+    Console.WriteLine("Szia, " + nev + "!");
+}
+```
+
+Meghívás:
+
+```csharp
+Koszontes("Anna"); // Kiírja: Szia, Anna!
+```
+
+## Metódus visszatérési értékkel
+
+```csharp
+int Osszead(int a, int b)
+{
+    return a + b;
+}
+```
+
+Meghívás:
+
+```csharp
+int eredmeny = Osszead(5, 3);
+Console.WriteLine(eredmeny); // 8
+```
+
+> [!NOTE]  
+> A `void` típus azt jelenti, hogy a metódus **nem ad vissza semmit**.
+
+## Paraméterátadás módjai
+
+### 1. **Érték szerint** (*alapértelmezett*)
+Az egyszerű típusok (*int, double, bool, stb.*) másolódnak az eredeti nem változik.
+
+```csharp
+void Novelem(int szam)
+{
+    szam++;
+    Console.WriteLine(szam); // 6 
+}
+
+int x = 5;
+Novelem(x);
+Console.WriteLine(x); // 5 – az eredeti nem változott
+```
+
+### 2. **Referencia szerint – `ref` vagy `out`**
+
+#### `ref` – már inicializált értéket módosít
+
+```csharp
+void Duplaz(ref int szam)
+{
+    szam *= 2;
+}
+
+int x = 5;
+Duplaz(ref x);
+Console.WriteLine(x); // 10
+```
+
+#### `out` – a metódusban kap értéket
+
+```csharp
+void Szorzas(int a, int b, out int eredmeny)
+{
+    eredmeny = a * b;
+}
+
+int r;
+Szorzas(3, 4, out r);
+Console.WriteLine(r); // 12
+```
+
+## Metódus túlterhelés (*overloading*)
+Ugyanaz a metódusnév, más paraméterekkel:
+
+```csharp
+int Osszeg(int a, int b)
+{
+    return a + b;
+}
+
+double Osszeg(double a, double b)
+{
+    return a + b;
+}
+```
+
+## Metódus alapértelmezett paraméterekkel
+
+```csharp
+void Udvozlet(string nev = "ismeretlen")
+{
+    Console.WriteLine($"Üdv, {nev}!");
+}
+
+Udvozlet();           // Üdv, ismeretlen!
+Udvozlet("Béla");     // Üdv, Béla!
+```
+
+## Lokális függvények (*függvény egy másikon belül*)
+
+```csharp
+void Kulfuggveny()
+{
+    void Belso()
+    {
+        Console.WriteLine("Ez egy belső metódus.");
+    }
+
+    Belso();
+}
+```
+
+## Összefoglalás
+
+| Fogalom            | Jelentés |
+|--------------------|----------|
+| `void`             | Nincs visszatérési érték |
+| `return`           | Értéket ad vissza |
+| `ref`, `out`       | Hivatkozással történő átadás |
+| `params`           | Tetszőleges számú paraméter |
+| `overload`         | Több metódus ugyanazzal a névvel, eltérő paraméterekkel |
+| `default param`    | Alapértelmezett paraméterérték |
+
 4. **OOP (Objektumorientált programozás)** -- Osztályok, öröklődés, interfészek, absztrakt osztályok, polimorfizmus.
 5. **Fájlkezelés és adatbázis kapcsolat** -- Hogyan olvashatsz és írhatsz fájlokat (StreamReader, StreamWriter), illetve használhatsz adatbázisokat (pl. SQL kapcsolat Entity Framework segítségével).
 6. **Aszinkron programozás** -- async és await, párhuzamos végrehajtás (Task, Thread).
