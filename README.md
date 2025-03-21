@@ -724,6 +724,79 @@ void Kulfuggveny()
 | `overload`         | Több metódus ugyanazzal a névvel, eltérő paraméterekkel |
 | `default param`    | Alapértelmezett paraméterérték |
 
-4. **OOP (Objektumorientált programozás)** -- Osztályok, öröklődés, interfészek, absztrakt osztályok, polimorfizmus.
+# **OOP *(Objektumorientált programozás)***
+Az **osztály**, **absztrakt osztály** és **interface (felület)** a C# nyelvben (és más objektumorientált nyelvekben) az **öröklődés** és **polimorfizmus** fontos eszközei, de különböző célt szolgálnak. Itt egy rövid, érthető összehasonlítás:
+
+---
+
+## **Osztály (class)**
+- Olyan sablon, amely **mezőket**, **tulajdonságokat**, **metódusokat** és **konstruktorokat** tartalmaz.
+- Lehet példányosítani (példányt lehet létrehozni belőle).
+- Teljesen működőképes egység.
+
+**Példa:**
+```csharp
+class Auto {
+    public void Indit() {
+        Console.WriteLine("Az autó elindult.");
+    }
+}
+```
+
+---
+
+## **Absztrakt osztály (abstract class)**
+- Nem lehet példányosítani.
+- Lehet benne **megvalósított** és **absztrakt** (csak aláírt, de nem definiált) metódus.
+- Arra szolgál, hogy **alap viselkedést** biztosítson, amit az alosztályok kiegészítenek vagy felülírnak.
+- Örökléssel származtatott osztályok **egyetlen** absztrakt osztályból örökölhetnek.
+
+**Példa:**
+```csharp
+abstract class Allat {
+    public abstract void HangotAd();  // nincs törzs, kötelező felülírni
+
+    public void Mozog() {
+        Console.WriteLine("Az állat mozog.");
+    }
+}
+
+class Kutya : Allat {
+    public override void HangotAd() {
+        Console.WriteLine("Vau!");
+    }
+}
+```
+
+## **Interface (*felület*)**
+- Csak **metódus-aláírásokat** és **tulajdonságokat** tartalmazhat (nincs implementáció).
+- Egy osztály **több interfészt** is megvalósíthat (többszörös öröklés).
+- Használatával **szerződés jellegű elvárásokat** lehet megadni, hogy mit tudjon az adott osztály.
+
+**Példa:**
+```csharp
+interface IRepulo {
+    void Felszall();
+}
+
+class RepuloGep : IRepulo {
+    public void Felszall() {
+        Console.WriteLine("A gép felszáll.");
+    }
+}
+```
+
+## **Összefoglaló táblázat:**
+
+| Tulajdonság                    | Osztály        | Absztrakt osztály         | Interface                    |
+|-------------------------------|----------------|----------------------------|------------------------------|
+| Példányosítható?              | Igen           | Nem                        | Nem                          |
+| Tartalmazhat megvalósítást?  | Igen           | Igen (részben)             | Nem (C# 8.0-tól korlátozottan igen) |
+| Absztrakt tagokat tartalmazhat? | Nem           | Igen                       | Igen (csak aláírásokat)      |
+| Öröklés típusa                | Egy osztályból | Egy absztrakt osztályból   | Több interface is megvalósítható |
+| Használat célja               | Példányosítás, működés | Közös alapviselkedés meghatározása | Képességek definiálása       |
+
+## [Állatos példa](./CSharp_examples/oop/)
+
 5. **Fájlkezelés és adatbázis kapcsolat** -- Hogyan olvashatsz és írhatsz fájlokat (StreamReader, StreamWriter), illetve használhatsz adatbázisokat (pl. SQL kapcsolat Entity Framework segítségével).
 6. **Aszinkron programozás** -- async és await, párhuzamos végrehajtás (Task, Thread).
