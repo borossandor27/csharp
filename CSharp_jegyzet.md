@@ -1,9 +1,7 @@
 # C# keletkezése, története
-
 A C# nyelvet a Microsoft fejlesztette ki, és először 2000-ben mutatták be. A nyelv kidolgozása Anders Hejlsberg nevéhez köthető, aki korábban a Turbo Pascal és a Delphi nyelvek fejlesztésében is részt vett. A C# a .NET keretrendszer része, és eredetileg a Java nyelvre adott válaszként született, bár mára önálló, erősen fejlett nyelvvé vált.
 
 # C# és VFP
-
 A Visual FoxPro (VFP) adatbázis-központú programozási nyelv és fejlesztői környezet, amelyet főleg üzleti alkalmazások fejlesztésére használtak. A Visual FoxPro és a C# nagyon eltérő paradigmákon alapul.
 
 | **Tulajdonság**   | **C#**                       | **Visual FoxPro** |
@@ -12,7 +10,7 @@ A Visual FoxPro (VFP) adatbázis-központú programozási nyelv és fejlesztői 
 | **Használat**     | Modern alkalmazások fejlesztése (*web, mobil, asztali, játékok, cloud, AI, stb.*) | Adatbázis-központú alkalmazások fejlesztése |
 | **Típusosság**    | Erősen típusos (*statikus*) | Gyengén típusos (*dinamikus adattípusokkal*) |
 
-### Objektum-orientált paradigmára való áttérés
+## Objektum-orientált paradigmára való áttérés
 
 | **Tulajdonság**   | **C#**                       | **Visual FoxPro** |
 |-------------------|------------------------------|-------------------|
@@ -20,8 +18,7 @@ A Visual FoxPro (VFP) adatbázis-központú programozási nyelv és fejlesztői 
 | **Metódusok túlterhelése** | Igen | Nem |
 | **Interfészek és absztrakt osztályok** | Igen | Nem |
 
-### Adatbázis-kezelés különbségei
-
+## Adatbázis-kezelés különbségei
 A C#-ban nincs beépített adatbázis-kezelés, de a .NET keretrendszer széleskörű támogatást nyújt különböző adatbázisokhoz (*pl. SQL Server, MySQL, SQLite*) az **ADO.NET**, **Entity Framework** vagy **Dapper** segítségével.
 
 | **Tulajdonság**       | **C#**                      | **Visual FoxPro** |
@@ -71,7 +68,7 @@ Az ORM automatikusan leképezi az adatbázis tábláit **C# osztályokra**, így
 - Ha **kis vagy közepes méretű adatbázist** kezelsz.
 - Ha **több fejlesztő dolgozik a projekten**, mert az ORM strukturáltabb kódot biztosít.
 
-### Felhasználói felület (UI)
+## Felhasználói felület (UI)
 
 | **Tulajdonság**   | **C#**                       | **Visual FoxPro** |
 |-------------------|------------------------------|-------------------|
