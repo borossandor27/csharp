@@ -1,10 +1,8 @@
-# C# jegyzet
-
 # C# keletkezése, története
 
 A C# nyelvet a Microsoft fejlesztette ki, és először 2000-ben mutatták be. A nyelv kidolgozása Anders Hejlsberg nevéhez köthető, aki korábban a Turbo Pascal és a Delphi nyelvek fejlesztésében is részt vett. A C# a .NET keretrendszer része, és eredetileg a Java nyelvre adott válaszként született, bár mára önálló, erősen fejlett nyelvvé vált.
 
-# C# és VFP
+# C# és Visual FoxPro
 
 A Visual FoxPro (VFP) adatbázis-központú programozási nyelv és fejlesztői környezet, amelyet főleg üzleti alkalmazások fejlesztésére használtak. A Visual FoxPro és a C# nagyon eltérő paradigmákon alapul.
 
@@ -14,7 +12,7 @@ A Visual FoxPro (VFP) adatbázis-központú programozási nyelv és fejlesztői 
 | **Használat**     | Modern alkalmazások fejlesztése (*web, mobil, asztali, játékok, cloud, AI, stb.*) | Adatbázis-központú alkalmazások fejlesztése |
 | **Típusosság**    | Erősen típusos (*statikus*) | Gyengén típusos (*dinamikus adattípusokkal*) |
 
-### Objektum-orientált paradigmára való áttérés
+## Objektum-orientált paradigmára való áttérés
 
 | **Tulajdonság**   | **C#**                       | **Visual FoxPro** |
 |-------------------|------------------------------|-------------------|
@@ -22,7 +20,7 @@ A Visual FoxPro (VFP) adatbázis-központú programozási nyelv és fejlesztői 
 | **Metódusok túlterhelése** | Igen | Nem |
 | **Interfészek és absztrakt osztályok** | Igen | Nem |
 
-### Adatbázis-kezelés különbségei
+## Eltérések adatbázis-kezelésben
 
 A C#-ban nincs beépített adatbázis-kezelés, de a .NET keretrendszer széleskörű támogatást nyújt különböző adatbázisokhoz (*pl. SQL Server, MySQL, SQLite*) az **ADO.NET**, **Entity Framework** vagy **Dapper** segítségével.
 
@@ -32,7 +30,7 @@ A C#-ban nincs beépített adatbázis-kezelés, de a .NET keretrendszer szélesk
 | **Kapcsolat adatbázishoz** | ADO.NET, Entity Framework, Dapper | Beépített SQL Pass-Through, Cursor, DBF táblák |
 | **Többfelhasználós támogatás** | SQL szerverekkel skálázható | Többfelhasználós, de fájlalapú DBF szerkezet miatt sérülékeny |
 
-### ORM (*Object-Relational Mapping*) használata
+## ORM (*Object-Relational Mapping*) használata
 
 Az ORM automatikusan leképezi az adatbázis tábláit **C# osztályokra**, így nem kell SQL lekérdezéseket írnod minden egyes adatkezelési művelethez.
 
@@ -73,7 +71,7 @@ Az ORM automatikusan leképezi az adatbázis tábláit **C# osztályokra**, így
 - Ha **kis vagy közepes méretű adatbázist** kezelsz.
 - Ha **több fejlesztő dolgozik a projekten**, mert az ORM strukturáltabb kódot biztosít.
 
-### Felhasználói felület (UI)
+## Felhasználói felület (UI)
 
 | **Tulajdonság**   | **C#**                       | **Visual FoxPro** |
 |-------------------|------------------------------|-------------------|
@@ -95,15 +93,6 @@ Az ORM automatikusan leképezi az adatbázis tábláit **C# osztályokra**, így
 | | **decimal** | Decimal | 128 | 12m |
 | **Karakter** | **char** | Char | 8 | 'c' |
 | **Szöveg** | **string** | String | változó | "szöveg" |
-
-1. **Összetett adatszerkezetek** -- Például tömbök, listák (List\<T\>), szótárak (Dictionary\<K,V\>), halmazok (HashSet\<T\>), valamint saját osztályok és struktúrák.
-2. **Vezérlési szerkezetek** -- Feltételes elágazások (if, switch), ciklusok (for, while, foreach), kivételkezelés (try-catch).
-3. **Metódusok és függvények** -- Hogyan szervezd a kódot újrafelhasználható egységekké, paraméterátadás, visszatérési értékek.
-4. **OOP (Objektumorientált programozás)** -- Osztályok, öröklődés, interfészek, absztrakt osztályok, polimorfizmus.
-5. **Fájlkezelés és adatbázis kapcsolat** -- Hogyan olvashatsz és írhatsz fájlokat (StreamReader, StreamWriter), illetve használhatsz adatbázisokat (pl. SQL kapcsolat Entity Framework segítségével).
-6. **Aszinkron programozás** -- async és await, párhuzamos végrehajtás (Task, Thread).
-
-
 
 
 # Operátorok
@@ -240,3 +229,11 @@ string? nev = null;
 Console.WriteLine(nev ?? "Nincs név megadva"); // "Nincs név megadva"
 ```
 
+
+
+1. **Összetett adatszerkezetek** -- Például tömbök, listák (List\<T\>), szótárak (Dictionary\<K,V\>), halmazok (HashSet\<T\>), valamint saját osztályok és struktúrák.
+2. **Vezérlési szerkezetek** -- Feltételes elágazások (if, switch), ciklusok (for, while, foreach), kivételkezelés (try-catch).
+3. **Metódusok és függvények** -- Hogyan szervezd a kódot újrafelhasználható egységekké, paraméterátadás, visszatérési értékek.
+4. **OOP (Objektumorientált programozás)** -- Osztályok, öröklődés, interfészek, absztrakt osztályok, polimorfizmus.
+5. **Fájlkezelés és adatbázis kapcsolat** -- Hogyan olvashatsz és írhatsz fájlokat (StreamReader, StreamWriter), illetve használhatsz adatbázisokat (pl. SQL kapcsolat Entity Framework segítségével).
+6. **Aszinkron programozás** -- async és await, párhuzamos végrehajtás (Task, Thread).
