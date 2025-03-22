@@ -1,0 +1,14 @@
+﻿<Window x:Class="Hello_Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hello_Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Margin="20">
+        <TextBox x:Name="NameBox" />
+        <Button Content="Köszöntés" Click="Greet_Click" Margin="0,10,0,0"/>
+        <TextBlock x:Name="GreetingText" FontWeight="Bold" Margin="0,10,0,0"/>
+    </StackPanel>
+</Window>

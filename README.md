@@ -815,4 +815,6 @@ class RepuloGep : IRepulo {
 
 # Gyakorlati példák
 ## [Állatos példa `abstract class`-ra és `interface`-re](./CSharp_examples/oop/)
-## 
+## [Állatos példa több interfésszel, használattal](./CSharp_examples/OOP2/)
+## [`Hello_Wpf` a felület és kódolás bemutatására](./CSharp_examples/Hello_Wpf/)
+## [`Hello_WinForm` a felület és kódolás bemutatására](./CSharp_examples/Hello_WinForm/)
