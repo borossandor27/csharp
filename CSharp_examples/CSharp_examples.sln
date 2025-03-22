@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello_Wpf", "Hello_Wpf\Hell
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello_WinForm", "Hello_WinForm\Hello_WinForm.csproj", "{2D687289-D191-49CF-96AF-563F1223A988}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm_Task_example", "WinForm_Task_example\WinForm_Task_example.csproj", "{C7660011-4D3B-48B3-A732-E63F2CDE5EC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2D687289-D191-49CF-96AF-563F1223A988}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D687289-D191-49CF-96AF-563F1223A988}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D687289-D191-49CF-96AF-563F1223A988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7660011-4D3B-48B3-A732-E63F2CDE5EC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7660011-4D3B-48B3-A732-E63F2CDE5EC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7660011-4D3B-48B3-A732-E63F2CDE5EC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7660011-4D3B-48B3-A732-E63F2CDE5EC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

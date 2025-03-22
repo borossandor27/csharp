@@ -805,10 +805,62 @@ class RepuloGep : IRepulo {
 
 
 5. **Fájlkezelés és adatbázis kapcsolat** -- Hogyan olvashatsz és írhatsz fájlokat (StreamReader, StreamWriter), illetve használhatsz adatbázisokat (pl. SQL kapcsolat Entity Framework segítségével).
-6. **Aszinkron programozás** -- async és await, párhuzamos végrehajtás (Task, Thread).
+
+
+# **Aszinkron programozás** 
+`task`, `thread`, `process` **alapvető fogalmak a párhuzamos programozásban**! 
+
+## **Process *(folyamat)***
+Egy futtatható fájl elindítása hozza létre.
+
+- Egy **önállóan futó program példány**.
+- Saját **memóriaterülete van**, saját erőforrásai (fájlok, hálózat, stb.).
+- Teljesen **elszigetelve** fut más folyamatoktól.
+- A legtöbb alkalmazás egy processzként indul (`chrome.exe`, `notepad.exe`, stb.).
+
+## **Thread *(szál)***
+Egy böngésző *(pl. Chrome)* a processzen belül indíthat külön szálat a letöltésnek, a UI-nak, és a videólejátszásnak.
+
+- Egy processzen **belüli végrehajtási szál**.
+- Több szál ugyanazon memóriaterületen osztozik.
+- Könnyű és gyors váltani köztük, de **versenyhelyzetek** és **szinkronizációs problémák** előfordulhatnak.
+
+## **Task *(feladat)*** – (C# specifikus)
+
+- A `Task` egy **abstrakció a szálak felett**.
+- A .NET `Task` osztály lehetővé teszi a **magas szintű párhuzamosságot**, gyakran `async/await`-tel együtt.
+- Nem mindig új szálat indít! Lehet pl. szálkészletből, vagy egyszerű ütemezésből.
+
+```csharp
+    await Task.Run(() => HosszuSzamitas());
+```
+Ez párhuzamosan lefuttatja a számítást egy másik szálon, de neked nem kell közvetlenül szálat kezelni.
+
+
+## **Összehasonlító táblázat**
+
+| Jellemző           | **Process**                      | **Thread**                         | **Task** (C#)                    |
+|--------------------|----------------------------------|------------------------------------|----------------------------------|
+| Hol fut?           | Önállóan, operációs rendszer alatt | Egy processzen belül              | Általában egy szálon belül      |
+| Memória            | Saját, izolált                   | Osztozik a processz memóriáján    | Osztozik, nincs saját memória    |
+| Létrehozási költség| Nagy                             | Közepes                            | Kicsi                            |
+| Egymás közötti kommunikáció | Nehézkes (IPC)               | Könnyebb (de kell szinkronizálni) | Könnyű, `await` megoldja         |
+| Példa C#-ben       | `Process.Start("notepad.exe")`  | `new Thread(() => ...)`           | `Task.Run(() => ...)`           |
+| Cél                | Külön alkalmazás                 | Párhuzamos végrehajtás             | Aszinkron vagy párhuzamos művelet |
+
+## **Összefoglalás – mikor melyiket?**
+
+| Feladat típusa                        | Javasolt megoldás         |
+|--------------------------------------|---------------------------|
+| Külön program indítása               | `Process`                 |
+| Párhuzamos háttérmunka (pl. letöltés) | `Thread` vagy `Task`      |
+| Aszinkron művelet (pl. HTTP kérés)   | `Task` + `async/await`    |
+| Sok könnyű feladat futtatása         | `Task`, szálkészlettel    |
+| Bonyolult szálkezelés, finom vezérlés| `Thread` manuálisan       |
+
 
 # Gyakorlati példák
 ## [Állatos példa `abstract class`-ra és `interface`-re](./CSharp_examples/oop/)
-## [Állatos példa több interfésszel, használattal](./CSharp_examples/OOP2/)
+## [Állatos példa több interfésszel, használattal, `Thread`-el](./CSharp_examples/OOP2/)
 ## [`Hello_Wpf` a felület és kódolás bemutatására](./CSharp_examples/Hello_Wpf/)
 ## [`Hello_WinForm` a felület és kódolás bemutatására](./CSharp_examples/Hello_WinForm/)

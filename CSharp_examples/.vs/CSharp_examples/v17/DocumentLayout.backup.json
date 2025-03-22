@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D687289-D191-49CF-96AF-563F1223A988}|Hello_WinForm\\Hello_WinForm.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\hello_winform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D687289-D191-49CF-96AF-563F1223A988}|Hello_WinForm\\Hello_WinForm.csproj|solutionrelative:hello_winform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7660011-4D3B-48B3-A732-E63F2CDE5EC3}|WinForm_Task_example\\WinForm_Task_example.csproj|C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\winform_task_example\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7660011-4D3B-48B3-A732-E63F2CDE5EC3}|WinForm_Task_example\\WinForm_Task_example.csproj|solutionrelative:winform_task_example\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D687289-D191-49CF-96AF-563F1223A988}|Hello_WinForm\\Hello_WinForm.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\hello_winform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2D687289-D191-49CF-96AF-563F1223A988}|Hello_WinForm\\Hello_WinForm.csproj|solutionrelative:hello_winform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C7660011-4D3B-48B3-A732-E63F2CDE5EC3}|WinForm_Task_example\\WinForm_Task_example.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\winform_task_example\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7660011-4D3B-48B3-A732-E63F2CDE5EC3}|WinForm_Task_example\\WinForm_Task_example.csproj|solutionrelative:winform_task_example\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7660011-4D3B-48B3-A732-E63F2CDE5EC3}|WinForm_Task_example\\WinForm_Task_example.csproj|C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\winform_task_example\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C7660011-4D3B-48B3-A732-E63F2CDE5EC3}|WinForm_Task_example\\WinForm_Task_example.csproj|solutionrelative:winform_task_example\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\Hello_WinForm\\Form1.cs",
-              "RelativeDocumentMoniker": "Hello_WinForm\\Form1.cs",
-              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\Hello_WinForm\\Form1.cs",
-              "RelativeToolTip": "Hello_WinForm\\Form1.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAEwBAAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\WinForm_Task_example\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "WinForm_Task_example\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\WinForm_Task_example\\Form1.Designer.cs",
+              "RelativeToolTip": "WinForm_Task_example\\Form1.Designer.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwD0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T20:12:18.69Z",
+              "WhenOpened": "2025-03-22T21:40:05.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\Hello_WinForm\\Form1.cs",
-              "RelativeDocumentMoniker": "Hello_WinForm\\Form1.cs",
-              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\Hello_WinForm\\Form1.cs [Design]",
-              "RelativeToolTip": "Hello_WinForm\\Form1.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\WinForm_Task_example\\Form1.cs",
+              "RelativeDocumentMoniker": "WinForm_Task_example\\Form1.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\WinForm_Task_example\\Form1.cs*",
+              "RelativeToolTip": "WinForm_Task_example\\Form1.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T20:11:58.532Z",
+              "WhenOpened": "2025-03-22T21:39:44.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\WinForm_Task_example\\Form1.cs",
+              "RelativeDocumentMoniker": "WinForm_Task_example\\Form1.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\WinForm_Task_example\\Form1.cs [Design]*",
+              "RelativeToolTip": "WinForm_Task_example\\Form1.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T21:37:53.123Z",
               "EditorCaption": " [Design]"
             }
           ]
