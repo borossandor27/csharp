@@ -581,8 +581,6 @@ finally
 
 Nagyszerű, a **metódusok és függvények** a C# szíve-lelke – segítségükkel darabolhatod a programodat logikus részekre, újrahasználható kódblokkokat hozhatsz létre, és olvashatóbbá teheted az alkalmazásodat.
 
----
-
 # Metódus
 A C#-ban a **függvények** hivatalosan **metódusok** (*methods*), és mindig egy osztályhoz vagy struktúrához tartoznak.
 
