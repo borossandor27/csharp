@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{15D45D81-BE0A-4556-8F3B-EE0420178CFB}|oop\\oop.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15D45D81-BE0A-4556-8F3B-EE0420178CFB}|oop\\oop.csproj|solutionrelative:oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15D45D81-BE0A-4556-8F3B-EE0420178CFB}|oop\\oop.csproj|C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\madar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15D45D81-BE0A-4556-8F3B-EE0420178CFB}|oop\\oop.csproj|solutionrelative:oop\\madar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15D45D81-BE0A-4556-8F3B-EE0420178CFB}|oop\\oop.csproj|C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\irepulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15D45D81-BE0A-4556-8F3B-EE0420178CFB}|oop\\oop.csproj|solutionrelative:oop\\irepulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15D45D81-BE0A-4556-8F3B-EE0420178CFB}|oop\\oop.csproj|C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\allat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15D45D81-BE0A-4556-8F3B-EE0420178CFB}|oop\\oop.csproj|solutionrelative:oop\\allat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15D45D81-BE0A-4556-8F3B-EE0420178CFB}|oop\\oop.csproj|C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\kutya.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15D45D81-BE0A-4556-8F3B-EE0420178CFB}|oop\\oop.csproj|solutionrelative:oop\\kutya.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A7D42B4-0FE8-44B6-BF75-E9A1294E7BD8}|Thread_Task\\Thread_Task.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\thread_task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A7D42B4-0FE8-44B6-BF75-E9A1294E7BD8}|Thread_Task\\Thread_Task.csproj|solutionrelative:thread_task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,67 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Madar.cs",
-              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\Madar.cs",
-              "RelativeDocumentMoniker": "oop\\Madar.cs",
-              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\Madar.cs",
-              "RelativeToolTip": "oop\\Madar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T21:39:32.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Kutya.cs",
-              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\Kutya.cs",
-              "RelativeDocumentMoniker": "oop\\Kutya.cs",
-              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\Kutya.cs",
-              "RelativeToolTip": "oop\\Kutya.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T21:38:10.226Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Allat.cs",
-              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\Allat.cs",
-              "RelativeDocumentMoniker": "oop\\Allat.cs",
-              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\Allat.cs",
-              "RelativeToolTip": "oop\\Allat.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T21:34:14.324Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IRepulo.cs",
-              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\IRepulo.cs",
-              "RelativeDocumentMoniker": "oop\\IRepulo.cs",
-              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\IRepulo.cs",
-              "RelativeToolTip": "oop\\IRepulo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T21:32:28.955Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\Program.cs",
-              "RelativeDocumentMoniker": "oop\\Program.cs",
-              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\oop\\Program.cs",
-              "RelativeToolTip": "oop\\Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBYAAAAdAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\Thread_Task\\Program.cs",
+              "RelativeDocumentMoniker": "Thread_Task\\Program.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\Thread_Task\\Program.cs",
+              "RelativeToolTip": "Thread_Task\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T21:30:19.906Z",
+              "WhenOpened": "2025-03-22T09:12:31.767Z",
               "EditorCaption": ""
             }
           ]

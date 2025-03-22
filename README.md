@@ -746,10 +746,22 @@ class Auto {
 ---
 
 ## **Absztrakt osztály (abstract class)**
-- Nem lehet példányosítani.
-- Lehet benne **megvalósított** és **absztrakt** (csak aláírt, de nem definiált) metódus.
-- Arra szolgál, hogy **alap viselkedést** biztosítson, amit az alosztályok kiegészítenek vagy felülírnak.
-- Örökléssel származtatott osztályok **egyetlen** absztrakt osztályból örökölhetnek.
+Az absztrakt osztály soha nem közvetlen példányosításra szolgál. Ennek az osztálynak tartalmaznia kell legalább egy absztrakt metódust, amelyet az absztrakt kulcsszó vagy módosító jelöl meg az osztálydefinícióban. Az Absztrakt osztályokat általában egy alaposztály meghatározására használják az osztályhierarchiában. Vagy más szóval, az absztrakt osztály egy hiányos osztály vagy speciális osztály, amelyet nem tudunk példányosítani. Az absztrakt osztály célja, hogy mintát biztosítson a származtatott osztályokhoz, és meghatározzon néhány szabályt, amelyeket a származtatott osztályoknak végre kell hajtaniuk. 
+
+> [!IMPORTANT]  
+> Nem lehet példányosítani, így nem tartalmazhat konstruktort sem.
+
+> [!IMPORTANT]  
+> Lehet benne **megvalósított** és **absztrakt** (*csak aláírt, de nem definiált*) metódus.
+
+> [!IMPORTANT]  
+> Arra szolgál, hogy **alap viselkedést** biztosítson, amit az alosztályok kiegészítenek vagy felülírnak.
+
+> [!IMPORTANT]  
+> Örökléssel származtatott osztályok **egyetlen** absztrakt osztályból örökölhetnek. Többszörös öröklés nem megengedett.
+
+> [!NOTE]  
+> Konstruktorokat vagy destruktorokat tartalmazhat.
 
 **Példa:**
 ```csharp
@@ -769,7 +781,8 @@ class Kutya : Allat {
 ```
 
 ## **Interface (*felület*)**
-- Csak **metódus-aláírásokat** és **tulajdonságokat** tartalmazhat (nincs implementáció).
+A gyermek osztálynak kötelezően megvalósítandó methódusokat tartalmazza. Az interface nem deklarálhat példányadatokat, például mezőket, automatikusan megvalósított tulajdonságokat vagy tulajdonságszerű eseményeket. Az interfészek használatával például több forrásból származó viselkedést is felvehetünk egy osztályba. Ez a képesség azért is fontos a C# -ban, mert a nyelv nem támogatja az osztályok többszörös öröklését.
+- Csak **metódus-aláírásokat** és **tulajdonságokat** tartalmazhat (*nincs implementáció* kivéve a `static` metódust).
 - Egy osztály **több interfészt** is megvalósíthat (többszörös öröklés).
 - Használatával **szerződés jellegű elvárásokat** lehet megadni, hogy mit tudjon az adott osztály.
 
@@ -796,7 +809,10 @@ class RepuloGep : IRepulo {
 | Öröklés típusa                | Egy osztályból | Egy absztrakt osztályból   | Több interface is megvalósítható |
 | Használat célja               | Példányosítás, működés | Közös alapviselkedés meghatározása | Képességek definiálása       |
 
-## [Állatos példa](./CSharp_examples/oop/)
 
 5. **Fájlkezelés és adatbázis kapcsolat** -- Hogyan olvashatsz és írhatsz fájlokat (StreamReader, StreamWriter), illetve használhatsz adatbázisokat (pl. SQL kapcsolat Entity Framework segítségével).
 6. **Aszinkron programozás** -- async és await, párhuzamos végrehajtás (Task, Thread).
+
+# Gyakorlati példák
+## [Állatos példa `abstract class`-ra és `interface`-re](./CSharp_examples/oop/)
+## 

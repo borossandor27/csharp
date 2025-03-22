@@ -1,7 +1,0 @@
-C:\Users\Boros\OneDrive - BGaSzC Logisztikai és Kereskedelmi Technikum és Szakiskola\2024\szakmaiVizsga\VizsgaGyakorlok\Ingatlanhirdetesek\CSharp_examples\oop\obj\Debug\oop.csproj.AssemblyReference.cache
-C:\Users\Boros\OneDrive - BGaSzC Logisztikai és Kereskedelmi Technikum és Szakiskola\2024\szakmaiVizsga\VizsgaGyakorlok\Ingatlanhirdetesek\CSharp_examples\oop\obj\Debug\oop.csproj.CoreCompileInputs.cache
-C:\Users\Boros\OneDrive - BGaSzC Logisztikai és Kereskedelmi Technikum és Szakiskola\2024\szakmaiVizsga\VizsgaGyakorlok\Ingatlanhirdetesek\CSharp_examples\oop\bin\Debug\oop.exe.config
-C:\Users\Boros\OneDrive - BGaSzC Logisztikai és Kereskedelmi Technikum és Szakiskola\2024\szakmaiVizsga\VizsgaGyakorlok\Ingatlanhirdetesek\CSharp_examples\oop\bin\Debug\oop.exe
-C:\Users\Boros\OneDrive - BGaSzC Logisztikai és Kereskedelmi Technikum és Szakiskola\2024\szakmaiVizsga\VizsgaGyakorlok\Ingatlanhirdetesek\CSharp_examples\oop\bin\Debug\oop.pdb
-C:\Users\Boros\OneDrive - BGaSzC Logisztikai és Kereskedelmi Technikum és Szakiskola\2024\szakmaiVizsga\VizsgaGyakorlok\Ingatlanhirdetesek\CSharp_examples\oop\obj\Debug\oop.exe
-C:\Users\Boros\OneDrive - BGaSzC Logisztikai és Kereskedelmi Technikum és Szakiskola\2024\szakmaiVizsga\VizsgaGyakorlok\Ingatlanhirdetesek\CSharp_examples\oop\obj\Debug\oop.pdb
