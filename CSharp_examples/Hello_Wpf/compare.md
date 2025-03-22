@@ -1,9 +1,6 @@
-Nagyon jó kérdés! A **WinForms** és a **WPF (Windows Presentation Foundation)** két különböző technológia a **Windows asztali alkalmazások fejlesztésére**, és bár mindkettő működik .NET alatt, **más-más filozófia** szerint épülnek fel.
+A **WinForms** és a **WPF *(Windows Presentation Foundation)*** két különböző technológia a **Windows asztali alkalmazások fejlesztésére**, és bár mindkettő működik .NET alatt, **más-más filozófia** szerint épülnek fel.
 
-Az alábbiakban összefoglalom a legfontosabb **eltéréseket** és hogy **mikor melyiket érdemes választani**:
-
-
-## **1. Megjelenítés és UI technológia**
+## **Megjelenítés és UI technológia**
 
 | Jellemző          | **WinForms**                          | **WPF**                                |
 |-------------------|----------------------------------------|-----------------------------------------|
