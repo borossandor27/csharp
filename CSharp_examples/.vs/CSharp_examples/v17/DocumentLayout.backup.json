@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A7D42B4-0FE8-44B6-BF75-E9A1294E7BD8}|Thread_Task\\Thread_Task.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\thread_task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A7D42B4-0FE8-44B6-BF75-E9A1294E7BD8}|Thread_Task\\Thread_Task.csproj|solutionrelative:thread_task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\oop2\\iuszo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|solutionrelative:oop2\\iuszo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\oop2\\irepulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|solutionrelative:oop2\\irepulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\oop2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|solutionrelative:oop2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\oop2\\kacsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|solutionrelative:oop2\\kacsa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\oop2\\hal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|solutionrelative:oop2\\hal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\oop2\\denever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|solutionrelative:oop2\\denever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\oop2\\allat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61CB6846-5AB5-43E7-B826-2160976CFE07}|OOP2\\OOP2.csproj|solutionrelative:oop2\\allat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +43,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\Thread_Task\\Program.cs",
-              "RelativeDocumentMoniker": "Thread_Task\\Program.cs",
-              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\Thread_Task\\Program.cs",
-              "RelativeToolTip": "Thread_Task\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAmwBAAAAAmAAAAAAAAAA==",
+              "Title": "IUszo.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\IUszo.cs",
+              "RelativeDocumentMoniker": "OOP2\\IUszo.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\IUszo.cs",
+              "RelativeToolTip": "OOP2\\IUszo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T09:12:31.767Z",
+              "WhenOpened": "2025-03-22T11:07:01.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IRepulo.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\IRepulo.cs",
+              "RelativeDocumentMoniker": "OOP2\\IRepulo.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\IRepulo.cs",
+              "RelativeToolTip": "OOP2\\IRepulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T11:06:22.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\Program.cs",
+              "RelativeDocumentMoniker": "OOP2\\Program.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\Program.cs",
+              "RelativeToolTip": "OOP2\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAUwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T11:05:07.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Kacsa.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\Kacsa.cs",
+              "RelativeDocumentMoniker": "OOP2\\Kacsa.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\Kacsa.cs",
+              "RelativeToolTip": "OOP2\\Kacsa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T11:04:29.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Hal.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\Hal.cs",
+              "RelativeDocumentMoniker": "OOP2\\Hal.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\Hal.cs",
+              "RelativeToolTip": "OOP2\\Hal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T11:03:50.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Denever.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\Denever.cs",
+              "RelativeDocumentMoniker": "OOP2\\Denever.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\Denever.cs",
+              "RelativeToolTip": "OOP2\\Denever.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T11:03:01.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Allat.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\Allat.cs",
+              "RelativeDocumentMoniker": "OOP2\\Allat.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP2\\Allat.cs",
+              "RelativeToolTip": "OOP2\\Allat.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T11:02:25.157Z",
               "EditorCaption": ""
             }
           ]

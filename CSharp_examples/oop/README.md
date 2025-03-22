@@ -1,0 +1,2 @@
+# OOP alap
+Ha nem használjuk ki az öröklés adta lehetőségeket, akkor sokkal több munkával fogunk sokkal lassabb és várhatóan hibákat tartalmazó kódokat készíteni. A helytelen objektum meghatározás azonban gátja lehet a jövő beli fejlesztéseknek, akár használhatatlanná is teheti az alkalmazásunkat.
