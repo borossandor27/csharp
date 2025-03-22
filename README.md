@@ -727,8 +727,6 @@ void Kulfuggveny()
 # **OOP *(Objektumorientált programozás)***
 Az **osztály**, **absztrakt osztály** és **interface (felület)** a C# nyelvben (és más objektumorientált nyelvekben) az **öröklődés** és **polimorfizmus** fontos eszközei, de különböző célt szolgálnak. Itt egy rövid, érthető összehasonlítás:
 
----
-
 ## **Osztály (class)**
 - Olyan sablon, amely **mezőket**, **tulajdonságokat**, **metódusokat** és **konstruktorokat** tartalmaz.
 - Lehet példányosítani (példányt lehet létrehozni belőle).
@@ -742,8 +740,6 @@ class Auto {
     }
 }
 ```
-
----
 
 ## **Absztrakt osztály (abstract class)**
 Az absztrakt osztály soha nem közvetlen példányosításra szolgál. Ennek az osztálynak tartalmaznia kell legalább egy absztrakt metódust, amelyet az absztrakt kulcsszó vagy módosító jelöl meg az osztálydefinícióban. Az Absztrakt osztályokat általában egy alaposztály meghatározására használják az osztályhierarchiában. Vagy más szóval, az absztrakt osztály egy hiányos osztály vagy speciális osztály, amelyet nem tudunk példányosítani. Az absztrakt osztály célja, hogy mintát biztosítson a származtatott osztályokhoz, és meghatározzon néhány szabályt, amelyeket a származtatott osztályoknak végre kell hajtaniuk. 
