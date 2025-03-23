@@ -1,12 +1,70 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE19B13-D84B-4E3C-A1AC-43253612152C}|MyWindow\\MyWindow.csproj|C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\mywindow\\mywindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BE19B13-D84B-4E3C-A1AC-43253612152C}|MyWindow\\MyWindow.csproj|solutionrelative:mywindow\\mywindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE19B13-D84B-4E3C-A1AC-43253612152C}|MyWindow\\MyWindow.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\mywindow\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7BE19B13-D84B-4E3C-A1AC-43253612152C}|MyWindow\\MyWindow.csproj|solutionrelative:mywindow\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE19B13-D84B-4E3C-A1AC-43253612152C}|MyWindow\\MyWindow.csproj|C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\mywindow\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BE19B13-D84B-4E3C-A1AC-43253612152C}|MyWindow\\MyWindow.csproj|solutionrelative:mywindow\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\MyWindow\\FormMain.cs",
+              "RelativeDocumentMoniker": "MyWindow\\FormMain.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\MyWindow\\FormMain.cs [Design]",
+              "RelativeToolTip": "MyWindow\\FormMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T15:37:11.679Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormMain.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\MyWindow\\FormMain.cs",
+              "RelativeDocumentMoniker": "MyWindow\\FormMain.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\MyWindow\\FormMain.cs",
+              "RelativeToolTip": "MyWindow\\FormMain.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T13:47:37.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyWindow.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\MyWindow\\MyWindow.cs",
+              "RelativeDocumentMoniker": "MyWindow\\MyWindow.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\MyWindow\\MyWindow.cs*",
+              "RelativeToolTip": "MyWindow\\MyWindow.cs*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwCwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T13:46:30.384Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
