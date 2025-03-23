@@ -92,6 +92,4 @@ Az ORM automatikusan leképezi az adatbázis tábláit **C# osztályokra**, így
 - `async` és `await`
 - **Párhuzamos végrehajtás** (`Task`, `Thread`)
 
----
 
-Ez a Markdown verzió formázott és könnyen olvasható dokumentumként használható GitHub-on, vagy bármilyen Markdown-támogatással rendelkező szerkesztőben! 🚀
