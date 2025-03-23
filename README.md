@@ -860,3 +860,4 @@ Ez párhuzamosan lefuttatja a számítást egy másik szálon, de neked nem kell
 ## [Állatos példa több interfésszel, használattal, `Thread`-el](./CSharp_examples/OOP2/)
 ## [`Hello_Wpf` a felület és kódolás bemutatására](./CSharp_examples/Hello_Wpf/)
 ## [`Hello_WinForm` a felület és kódolás bemutatására](./CSharp_examples/Hello_WinForm/)
+## [Ablak sablon fejléccel és lábléccel](./CSharp_examples/MyWindow/)

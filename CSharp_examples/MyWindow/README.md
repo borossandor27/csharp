@@ -1,0 +1,2 @@
+# WinForm ablak sablon
+
