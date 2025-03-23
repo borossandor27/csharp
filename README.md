@@ -236,7 +236,7 @@ Nézzük sorban a leggyakoribb összetett adatszerkezeteket, alap példákkal:
 
 ---
 
-## ✅ 1. **Tömbök (Arrays)**
+## **Tömbök (Arrays)**
 
 Statikus méretű, azonos típusú elemeket tartalmaz.
 
@@ -253,9 +253,8 @@ Console.WriteLine(szamok[1]); // 20
 - Az indexelés 0-tól kezdődik.
 - Használható `foreach` vagy `for` ciklussal.
 
----
 
-## ✅ 2. **Listák (List\<T\>)**
+## **Listák (List\<T\>)**
 
 Dinamikus, típusos lista. Sokkal rugalmasabb, mint a tömb.
 
@@ -271,9 +270,8 @@ Jellemzők:
 - Elemet hozzáadhatsz `Add`, törölhetsz `Remove`, kereshetsz `Contains` stb.
 - Mérete automatikusan nő.
 
----
 
-## ✅ 3. **Szótár (Dictionary\<K, V\>)**
+## **Szótár (Dictionary\<K, V\>)**
 
 Kulcs-érték párokat tárol.
 
@@ -291,7 +289,7 @@ Console.WriteLine(korok["Anna"]); // 23
 
 ---
 
-## ✅ 4. **Halmaz (HashSet\<T\>)**
+## **Halmaz (HashSet\<T\>)**
 
 Egyedi értékeket tároló gyűjtemény.
 
@@ -307,9 +305,8 @@ Console.WriteLine(szamok.Count); // 2
 - Nem enged duplikált elemeket.
 - Gyors ellenőrzés, hogy egy elem benne van-e (`Contains`).
 
----
 
-## ✅ 5. **Saját osztály (class)**
+## **Saját osztály (class)**
 
 Komplex adatmodellekhez, viselkedéssel (metódusok) együtt.
 
@@ -336,7 +333,7 @@ e.Koszon(); // Szia, Ádám vagyok!
 
 ---
 
-## ✅ 6. **Struktúra (struct)**
+## **Struktúra (struct)**
 
 Hasonló az osztályhoz, de **értéktípus**. Inkább kisebb, egyszerűbb objektumokra.
 
@@ -356,8 +353,6 @@ Console.WriteLine($"{p.X}, {p.Y}");
 
 - Jobban teljesít, ha sok kis adatot mozgatunk.
 - Nincs öröklés, csak egyszerűbb használatra.
-
----
 
 ## Összehasonlító táblázat (röviden)
 
@@ -804,7 +799,8 @@ class RepuloGep : IRepulo {
 | Használat célja               | Példányosítás, működés | Közös alapviselkedés meghatározása | Képességek definiálása       |
 
 
-5. **Fájlkezelés és adatbázis kapcsolat** -- Hogyan olvashatsz és írhatsz fájlokat (StreamReader, StreamWriter), illetve használhatsz adatbázisokat (pl. SQL kapcsolat Entity Framework segítségével).
+5. **Fájlkezelés és adatbázis kapcsolat** 
+Hogyan olvashatsz és írhatsz fájlokat (StreamReader, StreamWriter), illetve használhatsz adatbázisokat (pl. SQL kapcsolat Entity Framework  vagy .NET).
 
 
 # **Aszinkron programozás** 
