@@ -633,7 +633,7 @@ finally
 
 | **C#** | **Visual FoxPro** |
 |-------|-------------------|
-|<code>
+|`<code>
     if (a > b)
         {
             Console.WriteLine("a nagyobb");
@@ -641,12 +641,12 @@ finally
         else
         {
             Console.WriteLine("b nagyobb vagy egyenlő");
-        }</code> | <code>
+        }</code>` | `<code>
         IF a > b
             ? "a nagyobb"
         ELSE
             ? "b nagyobb vagy egyenlő"
-        ENDIF</code>|
+        ENDIF</code>`|
 
 
 
