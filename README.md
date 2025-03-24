@@ -81,6 +81,8 @@ Az ORM automatikusan leképezi az adatbázis tábláit **C# osztályokra**, így
 
 # **Elemi adattípusok**
 
+## A C# elemi adattípusai
+
 | **Típus** | **Típusnév másképpen (egyenértékű)** | **Helyigény (bit)** | **Példa** |
 |-----------|-------------------------------------|---------------------|-----------|
 | **Logikai változó** | **bool** | Boolean | 8 (!) | true, false |
@@ -93,6 +95,58 @@ Az ORM automatikusan leképezi az adatbázis tábláit **C# osztályokra**, így
 | | **decimal** | Decimal | 128 | 12m |
 | **Karakter** | **char** | Char | 8 | 'c' |
 | **Szöveg** | **string** | String | változó | "szöveg" |
+
+
+## A **C#** és a **Visual FoxPro** (VFP) elemi adattípusai
+
+| Funkció / Típus                     | C#                                     | Visual FoxPro (VFP)                    |
+|------------------------------------|----------------------------------------|----------------------------------------|
+| **Egész számok**                   | `byte`, `short`, `int`, `long`        | `Integer`, `Currency`                  |
+| **Lebegőpontos számok**            | `float`, `double`, `decimal`          | `Float`, `Double`                      |
+| **Szöveg**                         | `string`, `char`                       | `Character`, `Memo`                    |
+| **Logikai (igaz/hamis)**           | `bool`                                 | `Logical`                              |
+| **Dátum és idő**                   | `DateTime`                             | `Date`, `DateTime`                     |
+| **Null értékek támogatása**        | `Nullable<T>` (`int?`, `bool?`, stb.) | `NULL` értékek engedélyezhetők mezőszinten |
+| **Bináris adat**                   | `byte[]`                               | `General`, `Blob`                      |
+| **Objektum típus**                 | `object`                               | `Variant` (általános típus)           |
+| **Enumeráció (felsorolás)**        | `enum`                                 | Nincs közvetlen támogatás              |
+| **Típusos tömbök**                 | `T[]`, pl. `int[]`, `string[]`         | Tömbök léteznek, de nem típusosak      |
+| **Fájlhivatkozás**                 | `FileStream`, `string` fájlnévként     | `General` mezőhöz csatolt fájl         |
+
+### Főbb különbségek
+
+- **C# típusbiztos nyelv**, vagyis minden változónak előre definiált típusa van, és a típusellenőrzés fordítási időben történik.
+- **VFP laza típuskezelést alkalmaz**, és sok esetben futásidőben dönti el a típusokat, a `Variant` (általános) típus miatt.
+- **C# támogatja az objektumorientált programozást** típusbiztosan, míg **VFP inkább adatbázis-központú**, objektumorientált lehetőségekkel kiegészítve.
+
+## C# adattípusok és azok megfelelői MS SQL Server-ben
+
+| C# típus             | SQL Server típus              | Megjegyzés |
+|----------------------|-------------------------------|------------|
+| `string`             | `nvarchar`, `varchar`, `char`, `text` | Karakterlánc, mérettől függően válassz |
+| `char`               | `nchar(1)` vagy `char(1)`     | Egyetlen karakter |
+| `int`                | `int`                         | Leggyakoribb egész szám típus |
+| `short`              | `smallint`                    | Kisebb egész szám |
+| `long`               | `bigint`                      | Nagy egész szám |
+| `byte`               | `tinyint`                     | 0–255 értéktartomány |
+| `bool`               | `bit`                         | Igen/Nem (0 vagy 1) |
+| `decimal`            | `decimal(p,s)` vagy `numeric(p,s)` | Pénzügyi adatokhoz, p = precision, s = scale |
+| `float`              | `real`                        | Lebegőpontos szám, kisebb pontosság |
+| `double`             | `float`                       | Nagy pontosságú lebegőpontos |
+| `DateTime`           | `datetime`, `datetime2`, `smalldatetime`, `date`, `time` | Válassz az igényelt pontosság szerint |
+| `DateOnly` (C# 6+)   | `date`                        | Csak dátum |
+| `TimeOnly` (C# 6+)   | `time`                        | Csak idő |
+| `byte[]`             | `varbinary`, `image`          | Bináris adatok (pl. fájlok, képek) |
+| `Guid`               | `uniqueidentifier`            | Egyedi azonosító (UUID) |
+| `object`             | Bármilyen SQL típus lehet     | Futásidőben dönthető el |
+| `Nullable<T>`        | `NULL` engedélyezett típus    | Pl. `int?` → `int NULL` |
+
+
+> [!TIP]
+> **Pénzügyi vagy számítási pontossághoz** mindig `decimal`-t használj, ne `float`-ot!
+
+> [!NOTE]  
+> A `datetime2` pontosabb és nagyobb tartományt kínál, mint a `datetime`.
 
 
 # Operátorok
@@ -184,7 +238,7 @@ Console.WriteLine(a ^ b); // 6 (110)
 
 ---
 
-## **6️⃣ Növelés és csökkentés operátorok**
+## ** Növelés és csökkentés operátorok**
 Ezek az operátorok az adott változó értékét módosítják **1-gyel**.
 
 | Operátor | Leírás | Példa | Eredmény |
@@ -481,7 +535,7 @@ switch (nap)
 
 ## **Ciklusok – `for`, `while`, `do-while`, `foreach`**
 
-### 🔹 `for` ciklus
+### `for` ciklus
 
 Ismert ismétlésszámnál.
 
@@ -573,8 +627,68 @@ finally
 | `return` | Kilép a metódusból |
 
 
+## A **C#** és **Visual FoxPro** megfelelő kódjai
 
-Nagyszerű, a **metódusok és függvények** a C# szíve-lelke – segítségükkel darabolhatod a programodat logikus részekre, újrahasználható kódblokkokat hozhatsz létre, és olvashatóbbá teheted az alkalmazásodat.
+### **IF – elágazás**
+
+| **C#** | **Visual FoxPro** |
+|-------|-------------------|
+|```csharp
+    if (a > b)
+        {
+            Console.WriteLine("a nagyobb");
+        }
+        else
+        {
+            Console.WriteLine("b nagyobb vagy egyenlő");
+        }``` | ```foxpro
+        IF a > b
+            ? "a nagyobb"
+        ELSE
+            ? "b nagyobb vagy egyenlő"
+        ENDIF```|
+
+
+
+### 🔄 2. **SWITCH / DO CASE – többirányú elágazás**
+
+| **C#** | **Visual FoxPro** |
+|--------|--------------------|
+|```csharp<br>switch (nap)<br>{<br>    case 1:<br>        Console.WriteLine("Hétfő");<br>        break;<br>    case 2:<br>        Console.WriteLine("Kedd");<br>        break;<br>    default:<br>        Console.WriteLine("Ismeretlen");<br>}```|```foxpro<br>DO CASE<br>    CASE nap = 1<br>        ? "Hétfő"<br>    CASE nap = 2<br>        ? "Kedd"<br>    OTHERWISE<br>        ? "Ismeretlen"<br>ENDCASE```|
+
+---
+
+### 🔁 3. **FOR ciklus**
+
+| **C#** | **Visual FoxPro** |
+|--------|--------------------|
+|```csharp<br>for (int i = 1; i <= 5; i++)<br>{<br>    Console.WriteLine(i);<br>}```|```foxpro<br>FOR i = 1 TO 5<br>    ? i<br>ENDFOR```|
+
+---
+
+### 🔁 4. **WHILE ciklus**
+
+| **C#** | **Visual FoxPro** |
+|--------|--------------------|
+|```csharp<br>while (x < 10)<br>{<br>    x++;<br>}```|```foxpro<br>DO WHILE x < 10<br>    x = x + 1<br>ENDDO```|
+
+---
+
+### 🔂 5. **DO/WHILE – utólag vizsgált ciklus**
+
+| **C#** | **Visual FoxPro** |
+|--------|--------------------|
+|```csharp<br>int x = 0;<br>do<br>{<br>    Console.WriteLine(x);<br>    x++;<br>} while (x < 5);```|```foxpro<br>x = 0<br>DO<br>    ? x<br>    x = x + 1<br>LOOP WHILE x < 5```|
+
+---
+
+Ha szeretnéd, készíthetek **PDF táblázatot** vagy **letölthető segédletet** is ezekből az összehasonlításokból.
+
+Szólj, ha kéne ilyesmi! 😊
+
+
+
+
 
 # Metódus
 A C#-ban a **függvények** hivatalosan **metódusok** (*methods*), és mindig egy osztályhoz vagy struktúrához tartoznak.
