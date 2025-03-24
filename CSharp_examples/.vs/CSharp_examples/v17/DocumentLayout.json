@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E07D7FF5-BDD4-4FEE-854D-1D760BED040E}|Object\\Object.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\object\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E07D7FF5-BDD4-4FEE-854D-1D760BED040E}|Object\\Object.csproj|solutionrelative:object\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{043D9AAA-1938-49F6-B47F-BA6167976010}|OOP3\\OOP3.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\oop3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{043D9AAA-1938-49F6-B47F-BA6167976010}|OOP3\\OOP3.csproj|solutionrelative:oop3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,13 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\Object\\Program.cs",
-              "RelativeDocumentMoniker": "Object\\Program.cs",
-              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\Object\\Program.cs",
-              "RelativeToolTip": "Object\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP3\\Program.cs",
+              "RelativeDocumentMoniker": "OOP3\\Program.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\OOP3\\Program.cs*",
+              "RelativeToolTip": "OOP3\\Program.cs*",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAkwHQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T09:56:20.949Z",
+              "WhenOpened": "2025-03-24T17:10:02.962Z",
               "EditorCaption": ""
             }
           ]
