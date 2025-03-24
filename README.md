@@ -238,7 +238,7 @@ Console.WriteLine(a ^ b); // 6 (110)
 
 ---
 
-## ** Növelés és csökkentés operátorok**
+## Növelés és csökkentés operátorok
 Ezek az operátorok az adott változó értékét módosítják **1-gyel**.
 
 | Operátor | Leírás | Példa | Eredmény |
@@ -633,7 +633,7 @@ finally
 
 | **C#** | **Visual FoxPro** |
 |-------|-------------------|
-|```csharp
+|<code>
     if (a > b)
         {
             Console.WriteLine("a nagyobb");
@@ -641,12 +641,12 @@ finally
         else
         {
             Console.WriteLine("b nagyobb vagy egyenlő");
-        }``` | ```foxpro
+        }</code> | <code>
         IF a > b
             ? "a nagyobb"
         ELSE
             ? "b nagyobb vagy egyenlő"
-        ENDIF```|
+        ENDIF</code>|
 
 
 
