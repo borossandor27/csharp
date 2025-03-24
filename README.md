@@ -629,66 +629,6 @@ finally
 
 ## A **C#** és **Visual FoxPro** megfelelő kódjai
 
-### **IF – elágazás**
-
-| **C#** | **Visual FoxPro** |
-|-------|-------------------|
-|`<code>
-    if (a > b)
-        {
-            Console.WriteLine("a nagyobb");
-        }
-        else
-        {
-            Console.WriteLine("b nagyobb vagy egyenlő");
-        }</code>` | `<code>
-        IF a > b
-            ? "a nagyobb"
-        ELSE
-            ? "b nagyobb vagy egyenlő"
-        ENDIF</code>`|
-
-
-
-### 🔄 2. **SWITCH / DO CASE – többirányú elágazás**
-
-| **C#** | **Visual FoxPro** |
-|--------|--------------------|
-|```csharp<br>switch (nap)<br>{<br>    case 1:<br>        Console.WriteLine("Hétfő");<br>        break;<br>    case 2:<br>        Console.WriteLine("Kedd");<br>        break;<br>    default:<br>        Console.WriteLine("Ismeretlen");<br>}```|```foxpro<br>DO CASE<br>    CASE nap = 1<br>        ? "Hétfő"<br>    CASE nap = 2<br>        ? "Kedd"<br>    OTHERWISE<br>        ? "Ismeretlen"<br>ENDCASE```|
-
----
-
-### 🔁 3. **FOR ciklus**
-
-| **C#** | **Visual FoxPro** |
-|--------|--------------------|
-|```csharp<br>for (int i = 1; i <= 5; i++)<br>{<br>    Console.WriteLine(i);<br>}```|```foxpro<br>FOR i = 1 TO 5<br>    ? i<br>ENDFOR```|
-
----
-
-### 🔁 4. **WHILE ciklus**
-
-| **C#** | **Visual FoxPro** |
-|--------|--------------------|
-|```csharp<br>while (x < 10)<br>{<br>    x++;<br>}```|```foxpro<br>DO WHILE x < 10<br>    x = x + 1<br>ENDDO```|
-
----
-
-### 🔂 5. **DO/WHILE – utólag vizsgált ciklus**
-
-| **C#** | **Visual FoxPro** |
-|--------|--------------------|
-|```csharp<br>int x = 0;<br>do<br>{<br>    Console.WriteLine(x);<br>    x++;<br>} while (x < 5);```|```foxpro<br>x = 0<br>DO<br>    ? x<br>    x = x + 1<br>LOOP WHILE x < 5```|
-
----
-
-Ha szeretnéd, készíthetek **PDF táblázatot** vagy **letölthető segédletet** is ezekből az összehasonlításokból.
-
-Szólj, ha kéne ilyesmi! 😊
-
-
-
-
 
 # Metódus
 A C#-ban a **függvények** hivatalosan **metódusok** (*methods*), és mindig egy osztályhoz vagy struktúrához tartoznak.
