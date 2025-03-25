@@ -772,7 +772,7 @@ void Kulfuggveny()
 | `default param`    | Alapértelmezett paraméterérték |
 
 
-## C# metódus → Visual FoxPro 
+## C# metódus → Visual FoxPro függvény
 
 **C# példa:**
 ```csharp
@@ -805,8 +805,6 @@ PROCEDURE Udvozles(nev)
     ? "Szia, " + nev
 ENDPROC
 ```
-
----
 
 ### C# metódus VFP összefoglalva:
 
