@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InvoiceData xmlns="http://schemas.nav.gov.hu/OSA/3.0/api">
+    <invoice>
+        <invoiceNumber>TESZT-0001</invoiceNumber>
+        <invoiceIssueDate>2025-03-24</invoiceIssueDate>
+        <supplier>
+            <supplierTaxNumber>12345678</supplierTaxNumber>
+        </supplier>
+        <customer>
+            <customerName>Próba Kft.</customerName>
+        </customer>
+        <invoiceLines>
+            <line>
+                <description>Termék 1</description>
+                <quantity>2</quantity>
+                <unitPrice>500</unitPrice>
+                <lineAmount>1000</lineAmount>
+            </line>
+        </invoiceLines>
+    </invoice>
+</InvoiceData>
