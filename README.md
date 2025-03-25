@@ -760,7 +760,7 @@ void Kulfuggveny()
 }
 ```
 
-## Összefoglalás
+## C# metódus összefoglalás
 
 | Fogalom            | Jelentés |
 |--------------------|----------|
@@ -770,6 +770,51 @@ void Kulfuggveny()
 | `params`           | Tetszőleges számú paraméter |
 | `overload`         | Több metódus ugyanazzal a névvel, eltérő paraméterekkel |
 | `default param`    | Alapértelmezett paraméterérték |
+
+
+## C# metódus → Visual FoxPro 
+
+**C# példa:**
+```csharp
+int Osszead(int a, int b)
+{
+    return a + b;
+}
+```
+
+**Visual FoxPro megfelelő:**
+```foxpro
+FUNCTION Osszead(a, b)
+    RETURN a + b
+ENDFUNC
+```
+
+### **Void típusú metódus → Visual FoxPro eljárás (Procedure)**
+
+**C# példa:**
+```csharp
+void Udvozles(string nev)
+{
+    Console.WriteLine("Szia, " + nev);
+}
+```
+
+**Visual FoxPro megfelelő:**
+```foxpro
+PROCEDURE Udvozles(nev)
+    ? "Szia, " + nev
+ENDPROC
+```
+
+---
+
+### C# metódus VFP összefoglalva:
+
+| C# elem         | Visual FoxPro megfelelő   |
+|----------------|----------------------------|
+| `void` metódus | `PROCEDURE ... ENDPROC`    |
+| értéket ad vissza | `FUNCTION ... RETURN ... ENDFUNC` |
+
 
 # **OOP *(Objektumorientált programozás)***
 Az **osztály**, **absztrakt osztály** és **interface (felület)** a C# nyelvben (és más objektumorientált nyelvekben) az **öröklődés** és **polimorfizmus** fontos eszközei, de különböző célt szolgálnak. Itt egy rövid, érthető összehasonlítás:
