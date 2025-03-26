@@ -101,7 +101,3 @@ public static class SignatureHelper
 dotnet add package BouncyCastle
 ```
 
----
-
-Szeretnéd, hogy ezt beépítsem a meglévő `NavRestClient` projektbe, vagy inkább küldjem külön fájlban?  
-Utána jön az **XSD validálás**, majd a **teszt automatizálás**.
