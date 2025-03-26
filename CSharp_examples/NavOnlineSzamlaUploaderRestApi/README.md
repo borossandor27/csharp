@@ -1,7 +1,9 @@
 # A NAV számára elektronikus számlák beküldése
-[API dokumentáció](https://github.com/nav-gov-hu/Online-Invoice/tree/master/docs)
+[Online Számla tesztrendszer](https://onlineszamla-test.nav.gov.hu/home)
+[API dokumentáció a GitHub-on](https://github.com/nav-gov-hu/Online-Invoice/tree/master/docs)
 [NAV hivatalos dokumentációja](https://onlineszamla.nav.gov.hu/dokumentaciok)
 [Az online számlaadat-szolgáltatás gyakori hibái](https://nav.gov.hu/ugyfeliranytu/nezzen-utana/tudjon_rola/Az_online_szamlaadat-szolgaltatas_gyakori_hibai)
+[Online Számla rendszer validációkkal kapcsolatos változás](https://github.com/nav-gov-hu/Online-Invoice/discussions/1144)
 
 ## 🔧 1. NAV Online Számla regisztráció
 - A https://onlineszamla.nav.gov.hu oldalon regisztrálnod kell cégedet.
