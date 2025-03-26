@@ -55,10 +55,7 @@ Console.WriteLine(response.result.message);
 
 ---
 
-Ha szeretnéd, segíthetek egy **C# projekt sablont** is összerakni NAV beküldéshez (SOAP kliens, XML aláírás, sandbox támogatás). Érdekelne?
----
-
-## 🔐 1. SHA3-512 aláírás kiszámítása (signature)
+## 🔐 SHA3-512 aláírás kiszámítása (signature)
 
 A NAV REST API-nál az `exchangeToken` kéréshez kötelező mező a `signature`. Ez a következőképpen épül fel:
 
