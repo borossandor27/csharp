@@ -885,7 +885,7 @@ class RepuloGep : IRepulo {
 }
 ```
 
-## **Összefoglaló táblázat:**
+## OOP elemek összefoglaló táblázata
 
 | Tulajdonság                    | Osztály        | Absztrakt osztály         | Interface                    |
 |-------------------------------|----------------|----------------------------|------------------------------|
@@ -895,21 +895,48 @@ class RepuloGep : IRepulo {
 | Öröklés típusa                | Egy osztályból | Egy absztrakt osztályból   | Több interface is megvalósítható |
 | Használat célja               | Példányosítás, működés | Közös alapviselkedés meghatározása | Képességek definiálása       |
 
+## C# vs VFP – OOP összehasonlítás
+A **C#** és a **Visual FoxPro (VFP)** is tartalmaz **objektum-orientált programozás (OOP)** szempontjából fontos elemeket, de a **a C# sokkal fejlettebb és teljesebb OOP nyelv**, míg a VFP inkább „objektum-orientált elemekkel rendelkező procedurális nyelv”.
 
-5. **Fájlkezelés és adatbázis kapcsolat** 
-Hogyan olvashatsz és írhatsz fájlokat (StreamReader, StreamWriter), illetve használhatsz adatbázisokat (pl. SQL kapcsolat Entity Framework  vagy .NET).
+| Jellemző | **C#** | **Visual FoxPro (VFP)** |
+|---------|--------|--------------------------|
+| **Osztályok és objektumok** | ✅ Teljes körű támogatás | ✅ Van osztály és objektum, de nem annyira kifinomult |
+| **Adatrejtés (Encapsulation)** | ✅ `private`, `public`, `protected`, `internal` | ⚠️ Korlátozott – csak `public` és `protected`, nincs `private` |
+| **Öröklés (Inheritance)** | ✅ Egyszintű öröklés támogatott (`:` operátor) | ✅ Van öröklés, de nincs többszintű ellenőrzés |
+| **Polimorfizmus** | ✅ Virtuális metódusok, override, overload | ⚠️ Részleges – override támogatott, overload nem igazán |
+| **Absztrakció** | ✅ `abstract`, `interface` kulcsszavakkal | ⚠️ Nincs absztrakt osztály vagy interfész támogatás |
+| **Interfészek** | ✅ Igen | ❌ Nem támogatott |
+| **Tulajdonságok (property)** | ✅ Automatikus `get` / `set` | ⚠️ Léteznek, de bonyolultabb szintaxis |
+| **Konstruktor / Destruktor** | ✅ Támogatott, túlterhelhető konstruktor | ✅ Van konstruktor, de nem túlterhelhető; destruktor implicit |
+| **Statikus tagok / osztályok** | ✅ `static` kulcsszóval | ⚠️ Statikus változók vannak, de statikus osztály nincs |
+| **Nevesített névterek** | ✅ `namespace` | ❌ Nem támogatott |
+| **Modern OOP szolgáltatások (pl. LINQ, async/await, generikusok)** | ✅ Fejlett funkciók | ❌ Nem érhető el |
+
+### 🔹 **C#**
+- Teljes értékű, **erősen típusos, objektum-orientált** nyelv.
+- Az OOP minden elemét támogatja: absztrakció, öröklés, polimorfizmus, interfészek, moduláris felépítés, namespace-ek stb.
+- Modern nyelv, .NET környezetben fut, rengeteg extra eszközzel és könyvtárral.
+
+### 🔸 **Visual FoxPro**
+- Eredetileg **procedurális adatbázis-kezelő nyelv**, amelyhez később kerültek OOP elemek.
+- **OOP támogatása korlátozott és régebbi szemléletű**.
+- Interfészek, absztrakt osztályok, overload, namespace-ek hiányoznak.
+- Jó eszköz volt az adatvezérelt alkalmazásokhoz, de mára elavult.
+
+# Fájlkezelés és adatbázis kapcsolat
+Hogyan olvashatsz és írhatsz fájlokat *(`StreamReader`, `StreamWriter`), illetve használhatsz adatbázisokat *(pl. SQL kapcsolat Entity Framework  vagy .NET)*.
 
 
-# **Aszinkron programozás** 
+# Aszinkron programozás
 `task`, `thread`, `process` **alapvető fogalmak a párhuzamos programozásban**! 
 
-## **Process *(folyamat)***
+## Process *(folyamat)*
 Egy futtatható fájl elindítása hozza létre.
 
 - Egy **önállóan futó program példány**.
-- Saját **memóriaterülete van**, saját erőforrásai (fájlok, hálózat, stb.).
+- Saját **memóriaterülete van**, saját erőforrásai *(fájlok, hálózat, stb.)*.
 - Teljesen **elszigetelve** fut más folyamatoktól.
-- A legtöbb alkalmazás egy processzként indul (`chrome.exe`, `notepad.exe`, stb.).
+- A legtöbb alkalmazás egy processzként indul *(`chrome.exe`, `notepad.exe`, stb.)*.
 
 ## **Thread *(szál)***
 Egy böngésző *(pl. Chrome)* a processzen belül indíthat külön szálat a letöltésnek, a UI-nak, és a videólejátszásnak.
@@ -941,7 +968,7 @@ Ez párhuzamosan lefuttatja a számítást egy másik szálon, de neked nem kell
 | Példa C#-ben       | `Process.Start("notepad.exe")`  | `new Thread(() => ...)`           | `Task.Run(() => ...)`           |
 | Cél                | Külön alkalmazás                 | Párhuzamos végrehajtás             | Aszinkron vagy párhuzamos művelet |
 
-## **Összefoglalás – mikor melyiket?**
+## Összefoglalás – mikor melyiket?
 
 | Feladat típusa                        | Javasolt megoldás         |
 |--------------------------------------|---------------------------|
