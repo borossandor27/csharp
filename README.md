@@ -957,7 +957,7 @@ Egy böngésző *(pl. Chrome)* a processzen belül indíthat külön szálat a l
 Ez párhuzamosan lefuttatja a számítást egy másik szálon, de neked nem kell közvetlenül szálat kezelni.
 
 
-## **Összehasonlító táblázat**
+## Párhuzamos programozás összefoglaló táblázat
 
 | Jellemző           | **Process**                      | **Thread**                         | **Task** (C#)                    |
 |--------------------|----------------------------------|------------------------------------|----------------------------------|
