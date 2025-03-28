@@ -1,5 +1,0 @@
-1. C# története és összehasonlítása más nyelvekkel – Megérteni, hogy honnan ered a C#, milyen problémákra ad választ, és miben különbözik például a Java, C++, python, Foxpro, stb.
-
-7. Fájlkezelés és adatbázis kapcsolat – Hogyan olvashatsz és írhatsz fájlokat (StreamReader, StreamWriter), illetve használhatsz adatbázisokat (pl. SQL kapcsolat Entity Framework segítségével).
-
-https://www.vfphelp.com/help/index.htm

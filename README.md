@@ -41,21 +41,19 @@ Az ORM automatikusan leképezi az adatbázis tábláit **C# osztályokra**, így
 | **Entity Framework (EF) Core** | A Microsoft hivatalos ORM-je, erősen integrált a .NET ökoszisztémába. |
 | **Dapper**          | "Micro ORM", amely kevesebb absztrakciót tartalmaz és gyorsabb, mint az EF Core. |
 
-**ORM előnyei**
-
+### ORM előnyei
 - **Kevesebb kód** → Automatikusan kezeli az adatbázis műveleteket (DbContext, DbSet).
 - **Egyszerűbb karbantartás** → Nem kell kézzel írni minden SQL lekérdezést.
 - **Típusbiztos** → Az adatok automatikusan leképeződnek C# osztályokra.
 - **Automatikus migrációk** → Az adatbázis szerkezete programból kezelhető.
 - **Kapcsolatok támogatása** → Pl. One-to-Many, Many-to-Many kapcsolatok kezelése könnyebb.
 
-**ORM hátrányai**
-
+### ORM hátrányai
 - **Lassabb lehet nagy lekérdezések esetén**, mert túl sok absztrakciót tartalmaz.
 - **Nem mindig hatékony SQL-t generál**, ami teljesítményveszteséget okozhat.
 - **Tanulási görbe** → Az ORM-ek működését és az optimalizálásukat meg kell tanulni.
 
-**Sebesség-összehasonlítás ORM és ADO.NET között**
+### Sebesség-összehasonlítás ORM és ADO.NET között
 
 | **Művelet**             | **Entity Framework Core** | **Dapper**        | **ADO.NET** |
 |-------------------------|--------------------------|-------------------|-------------|
