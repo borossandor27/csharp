@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC0DF8A7-15A9-4310-B593-281FFF7F0B8D}|NavInvoiceApiClient\\NavInvoiceApiClient.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\navinvoiceapiclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC0DF8A7-15A9-4310-B593-281FFF7F0B8D}|NavInvoiceApiClient\\NavInvoiceApiClient.csproj|solutionrelative:navinvoiceapiclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC0DF8A7-15A9-4310-B593-281FFF7F0B8D}|NavInvoiceApiClient\\NavInvoiceApiClient.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\navinvoiceapiclient\\navxmlvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC0DF8A7-15A9-4310-B593-281FFF7F0B8D}|NavInvoiceApiClient\\NavInvoiceApiClient.csproj|solutionrelative:navinvoiceapiclient\\navxmlvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC0DF8A7-15A9-4310-B593-281FFF7F0B8D}|NavInvoiceApiClient\\NavInvoiceApiClient.csproj|C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\navinvoiceapiclient\\navinvoiceapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC0DF8A7-15A9-4310-B593-281FFF7F0B8D}|NavInvoiceApiClient\\NavInvoiceApiClient.csproj|solutionrelative:navinvoiceapiclient\\navinvoiceapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavXmlValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavInvoiceApiClient\\NavXmlValidator.cs",
+              "RelativeDocumentMoniker": "NavInvoiceApiClient\\NavXmlValidator.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavInvoiceApiClient\\NavXmlValidator.cs",
+              "RelativeToolTip": "NavInvoiceApiClient\\NavXmlValidator.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAUwCoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T07:40:10.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NavInvoiceApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavInvoiceApiClient\\NavInvoiceApiClient.cs",
+              "RelativeDocumentMoniker": "NavInvoiceApiClient\\NavInvoiceApiClient.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavInvoiceApiClient\\NavInvoiceApiClient.cs",
+              "RelativeToolTip": "NavInvoiceApiClient\\NavInvoiceApiClient.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T21:43:24.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavInvoiceApiClient\\Program.cs",
+              "RelativeDocumentMoniker": "NavInvoiceApiClient\\Program.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavInvoiceApiClient\\Program.cs",
+              "RelativeToolTip": "NavInvoiceApiClient\\Program.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAswHcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T21:11:03.522Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

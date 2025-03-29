@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A43D871-E786-4028-A76C-53563B310B32}|NavOnlineSzamlaUploaderRestApi\\NavOnlineSzamlaUploaderRestApi.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\navonlineszamlauploaderrestapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A43D871-E786-4028-A76C-53563B310B32}|NavOnlineSzamlaUploaderRestApi\\NavOnlineSzamlaUploaderRestApi.csproj|solutionrelative:navonlineszamlauploaderrestapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC0DF8A7-15A9-4310-B593-281FFF7F0B8D}|NavInvoiceApiClient\\NavInvoiceApiClient.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\navinvoiceapiclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC0DF8A7-15A9-4310-B593-281FFF7F0B8D}|NavInvoiceApiClient\\NavInvoiceApiClient.csproj|solutionrelative:navinvoiceapiclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A43D871-E786-4028-A76C-53563B310B32}|NavOnlineSzamlaUploaderRestApi\\NavOnlineSzamlaUploaderRestApi.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\navonlineszamlauploaderrestapi\\navapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A43D871-E786-4028-A76C-53563B310B32}|NavOnlineSzamlaUploaderRestApi\\NavOnlineSzamlaUploaderRestApi.csproj|solutionrelative:navonlineszamlauploaderrestapi\\navapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC0DF8A7-15A9-4310-B593-281FFF7F0B8D}|NavInvoiceApiClient\\NavInvoiceApiClient.csproj|c:\\users\\boros\\source\\repos\\csharp\\csharp_examples\\navinvoiceapiclient\\navinvoiceapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC0DF8A7-15A9-4310-B593-281FFF7F0B8D}|NavInvoiceApiClient\\NavInvoiceApiClient.csproj|solutionrelative:navinvoiceapiclient\\navinvoiceapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NavApiService.cs",
-              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavOnlineSzamlaUploaderRestApi\\NavApiService.cs",
-              "RelativeDocumentMoniker": "NavOnlineSzamlaUploaderRestApi\\NavApiService.cs",
-              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavOnlineSzamlaUploaderRestApi\\NavApiService.cs",
-              "RelativeToolTip": "NavOnlineSzamlaUploaderRestApi\\NavApiService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCcAAAAgAAAAAAAAAA==",
+              "Title": "NavInvoiceApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavInvoiceApiClient\\NavInvoiceApiClient.cs",
+              "RelativeDocumentMoniker": "NavInvoiceApiClient\\NavInvoiceApiClient.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavInvoiceApiClient\\NavInvoiceApiClient.cs",
+              "RelativeToolTip": "NavInvoiceApiClient\\NavInvoiceApiClient.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T19:52:33.325Z",
+              "WhenOpened": "2025-03-28T21:43:24.742Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavOnlineSzamlaUploaderRestApi\\Program.cs",
-              "RelativeDocumentMoniker": "NavOnlineSzamlaUploaderRestApi\\Program.cs",
-              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavOnlineSzamlaUploaderRestApi\\Program.cs",
-              "RelativeToolTip": "NavOnlineSzamlaUploaderRestApi\\Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAQAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavInvoiceApiClient\\Program.cs",
+              "RelativeDocumentMoniker": "NavInvoiceApiClient\\Program.cs",
+              "ToolTip": "C:\\Users\\Boros\\source\\repos\\csharp\\CSharp_examples\\NavInvoiceApiClient\\Program.cs",
+              "RelativeToolTip": "NavInvoiceApiClient\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA1wDkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T19:49:24.216Z",
+              "WhenOpened": "2025-03-28T21:11:03.522Z",
               "EditorCaption": ""
             }
           ]
